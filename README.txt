@@ -1,32 +1,15 @@
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Problem: The initial movie dataset presented significant data quality challenges, including missing financial information (budget, gross revenue), inconsistent data types across crucial columns, and potential duplicate records. These issues hindered a reliable assessment of factors influencing box office success.
 
+Action: As a Data Analyst, I executed a comprehensive data cleaning, preprocessing, and exploratory analysis pipeline using Python (Pandas, NumPy, Matplotlib, Seaborn). Key steps included:
 
-This is Massively, a text-heavy, article-oriented design built around a huge background
-image (with a new parallax implementation I'm testing) and scroll effects (powered by
-Scrollex). A *slight* departure from all the one-pagers I've been doing lately, but one
-that fulfills a few user requests and makes use of some new techniques I've been wanting
-to try out. Enjoy it :)
+Data Cleansing: Identified and imputed missing values in budget (28%) and gross (2%) columns by filling them with zeros and converting them to appropriate integer types for accurate financial calculations.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+Data Structuring: Created a standardized yearcorrect column from the released date string to ensure consistent temporal analysis. Duplicates were identified and removed to maintain data integrity.
 
-(* = not included)
+Exploratory Data Analysis: Performed initial data inspections and sorted the dataset by gross revenue to observe top-performing films.
 
-AJ
-aj@lkn.io | @ajlkn
+Correlation Analysis: Generated a correlation heatmap to visually identify and quantify the relationships between various movie attributes (e.g., budget, votes, company) and gross revenue.
 
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Impact: This project transformed raw, inconsistent film data into a clean, robust, and analyzable dataset. The correlation analysis provided clear, data-driven insights, revealing which metrics significantly impact a film's gross earnings. This foundational understanding can inform strategic decisions for stakeholders in the film industry, enabling them to optimize resource allocation and enhance revenue potential.
+Problem: The initial movie dataset presented significant data quality challenges, including missing financial information (budget, gross revenue), inconsistent data types across crucial columns, and potential duplicate records. These issues hindered a reliable assessment of factors influencing box office success. Action: As a Data Analyst, I executed a comprehensive data cleaning, preprocessing, and exploratory analysis pipeline using Python (Pandas, NumPy, Matplotlib, Seaborn). Key steps included: Data Cleansing: Identified and imputed missing values in budget (28%) and gross (2%) columns by filling them with zeros and converting them to appropriate integer types for accurate financial calculations. Data Structuring: Created a standardized yearcorrect column from the released date string to ensure consistent temporal analysis. Duplicates were identified and removed to maintain data integrity. Exploratory Data Analysis: Performed initial data inspections and sorted the dataset by gross revenue to observe top-performing films. Correlation Analysis: Generated a correlation heatmap to visually identify and quantify the relationships between various movie attributes (e.g., budget, votes, company) and gross revenue. Impact: This project transformed raw, inconsistent film data into a clean, robust, and analyzable dataset. The correlation analysis provided clear, data-driven insights, revealing which metrics significantly impact a film's gross earnings. This foundational understanding can inform strategic decisions for stakeholders in the film industry, enabling them to optimize resource allocation and enhance revenue potential.
+Skills: Python (Programming Language) · Seaborn · Data Visualization · Data Cleaning
